@@ -1,11 +1,3 @@
 version: 1.0.{build}
 build_script:
-- cmd: >-
-    javac
-
-
-    PUSHD C:\
-
-    dir /s /b java*
-
-    POPD
+- cmd: .\build.cmd
