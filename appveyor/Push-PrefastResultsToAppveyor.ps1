@@ -8,5 +8,5 @@ for ($i=0; $i -lt $Dir.Count; $i++)
   .\appveyor\Convert-FileUrisToGitHubUris.ps1 $logFilePath
   $newExtension = ".github.sarif"
   $writeLocation = [System.IO.Path]::ChangeExtension($logFilePath, $newExtension)
-  Push-AppVeyorArtifact $writeLocation
+  #Push-AppVeyorArtifact $writeLocation
 }
