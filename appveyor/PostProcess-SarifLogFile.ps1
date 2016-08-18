@@ -9,6 +9,7 @@ for ($i=0; $i -lt $Dir.Count; $i++)
   $newExtension = ".github.sarif"
   $writeLocation = [System.IO.Path]::ChangeExtension($logFilePath, $newExtension)
   #Push-AppVeyorArtifact $writeLocation
+  WRITE-HOST "Updated SARIF log file: $writeLocation"
 }
 
 WRITE-HOST ""
