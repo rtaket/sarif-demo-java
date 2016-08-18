@@ -10,3 +10,6 @@ for ($i=0; $i -lt $Dir.Count; $i++)
   $writeLocation = [System.IO.Path]::ChangeExtension($logFilePath, $newExtension)
   #Push-AppVeyorArtifact $writeLocation
 }
+
+WRITE-HOST ""
+WRITE-HOST ""
